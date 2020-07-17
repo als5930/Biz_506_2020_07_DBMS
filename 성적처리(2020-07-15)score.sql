@@ -53,7 +53,7 @@ CREATE TABLE tbl_student(
 );
 
 DROP TABLE tbl_student CASCADE CONSTRAINTS;
-
+DROP TABLE tbl_score;
 
 -- 데이터 추가 
 INSERT INTO tbl_student(
