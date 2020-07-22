@@ -1,0 +1,86 @@
+package com.biz.domain;
+
+public class OrderVO {
+
+	
+	
+	//
+	//
+	
+	
+    private long	o_seq;	//number
+	private String o_num;	//char(6 byte)
+	private String o_date;	//char(10 byte)
+	private String o_cnum; //char(5 byte)
+	private String o_pcode;	//char(6 byte)
+	private String o_pname;	//char(6 byte)
+	public String getO_pname() {
+		return o_pname;
+	}
+	public void setO_pname(String o_pname) {
+		this.o_pname = o_pname;
+	}
+	private int o_price;	//number
+	private int o_qty;	//number
+	private int o_total;	//number	
+	public long getO_seq() {
+		return o_seq;
+	}
+	public void setO_seq(long o_seq) {
+		this.o_seq = o_seq;
+	}
+	public String getO_num() {
+		return o_num;
+	}
+	public void setO_num(String o_num) {
+		this.o_num = o_num;
+	}
+	public String getO_date() {
+		return o_date;
+	}
+	public void setO_date(String o_date) {
+		this.o_date = o_date;
+	}
+	public String getO_cnum() {
+		return o_cnum;
+	}
+	public void setO_cnum(String o_cnum) {
+		this.o_cnum = o_cnum;
+	}
+	public String getO_pcode() {
+		return o_pcode;
+	}
+	public void setO_pcode(String o_pcode) {
+		this.o_pcode = o_pcode;
+	}
+	public int getO_price() {
+		return o_price;
+	}
+	public void setO_price(int o_price) {
+		this.o_price = o_price;
+	}
+	public int getO_qty() {
+		return o_qty;
+	}
+	public void setO_qty(int o_qty) {
+		this.o_qty = o_qty;
+	}
+	public int getO_total() {
+		return o_total;
+	}
+	public void setO_total(int o_total) {
+		this.o_total = o_total;
+	}
+	@Override
+	public String toString() {
+		return "OrderVO [o_seq=" + o_seq + ", o_num=" + o_num + ", o_date=" + o_date + ", o_cnum=" + o_cnum
+				+ ", o_pcode=" + o_pcode + ", o_price=" + o_price + ", o_qty=" + o_qty + ", o_total=" + o_total + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+}
