@@ -1,28 +1,19 @@
-package com.biz.domain;
+package com.biz.dbms.domain;
 
 public class OrderVO {
-
 	
-	
-	//
-	//
-	
-	
-    private long	o_seq;	//number
-	private String o_num;	//char(6 byte)
-	private String o_date;	//char(10 byte)
-	private String o_cnum; //char(5 byte)
-	private String o_pcode;	//char(6 byte)
-	private String o_pname;	//char(6 byte)
-	public String getO_pname() {
-		return o_pname;
-	}
-	public void setO_pname(String o_pname) {
-		this.o_pname = o_pname;
-	}
-	private int o_price;	//number
-	private int o_qty;	//number
-	private int o_total;	//number	
+	// DB와 연동하는 프로젝트에서는
+	// VO클래스의 필드변수들을 table의 칼럼 이름과 동일하게 작성하고
+	//		일반적으로 snack case로 작성을 한다.
+	private long o_seq;		//	number
+	private String o_num;		//	char(6 byte)
+	private String o_date;		//	char(10 byte)
+	private String o_cnum;		//	char(5 byte)
+	private String o_pcode;	//	char(6 byte)
+	private String o_pname;	//	nvarchar2(125 char)
+	private int o_price;	//	number
+	private int o_qty;		//	number
+	private int o_total;	//	number
 	public long getO_seq() {
 		return o_seq;
 	}
@@ -53,6 +44,12 @@ public class OrderVO {
 	public void setO_pcode(String o_pcode) {
 		this.o_pcode = o_pcode;
 	}
+	public String getO_pname() {
+		return o_pname;
+	}
+	public void setO_pname(String o_pname) {
+		this.o_pname = o_pname;
+	}
 	public int getO_price() {
 		return o_price;
 	}
@@ -71,16 +68,12 @@ public class OrderVO {
 	public void setO_total(int o_total) {
 		this.o_total = o_total;
 	}
+	
 	@Override
 	public String toString() {
 		return "OrderVO [o_seq=" + o_seq + ", o_num=" + o_num + ", o_date=" + o_date + ", o_cnum=" + o_cnum
-				+ ", o_pcode=" + o_pcode + ", o_price=" + o_price + ", o_qty=" + o_qty + ", o_total=" + o_total + "]";
+				+ ", o_pcode=" + o_pcode + ", o_pname=" + o_pname + ", o_price=" + o_price + ", o_qty=" + o_qty
+				+ ", o_total=" + o_total + "]";
 	}
-	
-	
-	
-	
-	
-	
 	
 }
