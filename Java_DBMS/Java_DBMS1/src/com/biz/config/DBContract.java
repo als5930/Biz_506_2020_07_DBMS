@@ -1,4 +1,4 @@
-package com.biz.dbms.config;
+package com.biz.config;
 
 public class DBContract {
 

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.biz.dbms.config.DBContract;
-import com.biz.domain.OrderVO;
+import com.biz.dbms.domain.OrderVO;
 
 public class JdbcEx_01 {
 
