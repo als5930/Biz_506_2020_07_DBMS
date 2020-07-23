@@ -10,7 +10,11 @@ import java.util.List;
 import com.biz.dbms.config.DBConnection;
 import com.biz.dbms.config.DBContract;
 import com.biz.dbms.config.Lines;
+<<<<<<< HEAD
 import com.biz.domain.OrderVO;
+=======
+import com.biz.dbms.domain.OrderVO;
+>>>>>>> 39a9a01bc8ab5aa0f6bddf03b46bb8ed9e85d620
 
 public class JdbcEx_02 {
 
@@ -86,4 +90,8 @@ public class JdbcEx_02 {
 		
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 39a9a01bc8ab5aa0f6bddf03b46bb8ed9e85d620
