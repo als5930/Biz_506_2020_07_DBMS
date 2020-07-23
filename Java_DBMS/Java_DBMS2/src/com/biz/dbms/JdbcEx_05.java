@@ -11,7 +11,7 @@ import com.biz.dbms.serivce.OrderServiceImplv1;
 import com.biz.dbms.serivce.OrderView;
 import com.biz.domain.OrderVO;
 
-public class JdbEx_05 {
+public class JdbcEx_05 {
 
 	public static void main(String[] args) {
 
