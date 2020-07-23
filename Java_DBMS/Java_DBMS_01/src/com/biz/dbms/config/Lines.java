@@ -1,4 +1,4 @@
-package com.biz.config;
+package com.biz.dbms.config;
 
 public class Lines {
 
