@@ -140,4 +140,8 @@ INSERT INTO tbl_order(o_seq, o_date, o_num, o_cnum, o_pcode)
 
  
 
+<<<<<<< HEAD
 COMMIT;
+=======
+COMMIT;
+>>>>>>> c4106a0793c86412b2b8868bd7b0d2a81e1741ca
