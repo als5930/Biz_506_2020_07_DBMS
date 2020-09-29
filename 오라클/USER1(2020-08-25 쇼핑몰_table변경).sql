@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 --여기는 user1 화면
 
 DROP TABLE tbl_product;
@@ -32,4 +33,40 @@ CREATE TABLE tbl_dept(
 SELECT * FROM tbl_product;
 
 -- 삭제표시가 되지 않은 데이터만 조회
+=======
+--여기는 user1 화면
+
+DROP TABLE tbl_product;
+
+CREATE TABLE tbl_product(
+    P_CODE	CHAR(6)	PRIMARY KEY,
+    P_NAME	nVARCHAR2(30)	NOT NULL,
+    P_DCODE	CHAR(4)	,
+    P_STD	nVARCHAR2(20),	
+    P_IPRICE	NUMBER	,
+    P_OPRICE	NUMBER	,
+    P_IMAGE	nVARCHAR2(125),	
+    P_NOT_USE	CHAR(1)	DEFAULT NULL
+
+);
+
+DROP TABLE tbl_dept;
+CREATE TABLE tbl_dept(
+
+    D_CODE	CHAR(4)	PRIMARY KEY,
+    D_NAME	nVARCHAR2(50)	NOT NULL,
+    D_CEO	nVARCHAR2(30)	NOT NULL,
+    D_TEL	VARCHAR(20)	,
+    D_ADDRESS	nVARCHAR2(255),	
+    D_MANAGER	nVARCHAR2(50),	
+    D_MN_TEL	NVARCHAR2(20),	
+    d_NOT_USE	CHAR(1)	DEFAULt NULL
+
+);
+
+
+SELECT * FROM tbl_product;
+
+-- 삭제표시가 되지 않은 데이터만 조회
+>>>>>>> 8a144af459798edd12c07d3a213830f494728702
 SELECT * FROM tbl_product WHERE p_not_use IS NULL;
